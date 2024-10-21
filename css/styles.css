@@ -1,0 +1,100 @@
+:root{
+    --color-dark-blue: rgb(23, 23, 32);
+    --color-white: rgb(255, 255, 255);
+    --color-red-danger: rgb(220, 53, 69);
+    --color-white-opacity: rgba(255, 255, 255, 0.15);
+    --color-black-opacity: rgba(0, 0, 0, 0.150);
+    --transition: .5s;
+}
+
+body{
+    font-family: "Kanit", sans-serif;
+    background-color: var(--color-dark-blue);
+}
+
+.rodape{
+    background-color: var(--color-black-opacity);
+}
+
+.bg{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    height: 75vh;
+    background-image: url(../images/ladodireito2.jpg);
+    background-attachment: fixed;
+}
+
+.navbar{ 
+    background-color: var(--color-dark-blue);
+    z-index: 1000;
+}
+
+a{
+    color: var(--color-white);
+    transition: var(--transition);
+}
+
+a:hover{
+    color: var(--color-red-danger);
+}
+
+i{
+    color: var(--color-white);
+}
+
+.section-padding{
+    padding: 1.5rem 3rem;
+}
+
+.bg-opacity{
+    background-color: var(--color-white-opacity);
+}
+
+.accordion{
+    --bs-accordion-btn-bg: var(--color-dark-blue);
+    --bs-accordion-bg: var(--color-dark-blue);
+    --bs-accordion-btn-focus-box-shadow: none;
+    --bs-accordion-active-bg: var(--color-dark-blue);
+}
+
+.accordion-card{
+    --bs-accordion-btn-bg: var(--color-white-opacity);
+    --bs-accordion-bg: var(--color-white-opacity);
+    --bs-accordion-btn-focus-box-shadow: none;
+    --bs-accordion-active-bg: var(--color-white-opacity);
+}
+
+.navbar-toggler{
+    box-shadow: none !important;
+    border-color: var(--color-dark-blue)
+}
+
+.navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+
+@media (max-width: 768px) {
+    .bg {
+        height: 50vh;
+        background-attachment: scroll;
+    }
+    .menu{
+        flex-direction: column;
+    }
+
+    .bspace{
+        margin-bottom: 1rem;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .bg {
+        height: 30vh;
+    }
+    .menu{
+        flex-direction: column;
+    }
+}
